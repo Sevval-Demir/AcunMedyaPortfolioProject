@@ -1,0 +1,19 @@
+﻿@model AcunMedyaPortfolioProject.Models.Introductions
+@{
+    ViewBag.Title = "CreateIntroduction";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>CreateIntroduction</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Kaydet</button>
+    </form>
+</div>

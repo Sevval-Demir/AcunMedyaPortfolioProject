@@ -29,32 +29,32 @@ namespace AcunMedyaPortfolioProject.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateCategory(Categories category)
+        public ActionResult CreateCategory(Categories categories)
         {
-            db.Categories.Add(category);
+            db.Categories.Add(categories);
             db.SaveChanges();
             return RedirectToAction("CategoryList");
         }
 
         public ActionResult DeleteCategory(int id)
         {
-            var category = db.Categories.Find(id);
-            db.Categories.Remove(category);
+            var categories = db.Categories.Find(id);
+            db.Categories.Remove(categories);
             db.SaveChanges();
             return RedirectToAction("CategoryList");
         }
         [HttpGet]
         public ActionResult UpdateCategory(int id)
         {
-            var category = db.Categories.Find(id);
-            return View(category);
+            var categories = db.Categories.Find(id);
+            return View(categories);
         }
 
         [HttpPost]
-        public ActionResult UpdateCategory(CategoryController category)
+        public ActionResult UpdateCategory(Categories categories)
         {
-            var updatedCategory = db.Categories.Find(category.CategoryID);
-            updatedCategory.CategoryName = category.CategoryName;
+            var updatedCategory = db.Categories.Find(categories.CategoryID);
+            updatedCategory.CategoryName = categories.CategoryName;
             db.SaveChanges();
             return RedirectToAction("CategoryList");
 

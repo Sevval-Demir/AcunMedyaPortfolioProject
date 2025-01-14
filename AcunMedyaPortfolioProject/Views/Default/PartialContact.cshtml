@@ -1,0 +1,36 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.Contact>
+<section id="contact" class="s-contact target-section">
+
+    <div class="row contact-top">
+        <div class="column lg-12">
+            <h2 class="text-pretitle">
+                İLETİŞİME GEÇİN
+            </h2>
+
+            <p class="h1">
+                Bana ulaşmaktan çekinmeyin. 
+                İster bir sorunuz olsun ister tasarım, teknoloji veya sanat üzerine sohbet etmek isteyin.
+                Mesajlarınızı bekliyorum.
+            </p>
+        </div>
+    </div> <!-- end contact-top -->
+
+    <div class="row contact-bottom">
+        <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+            <h3 class="text-pretitle">İletişim</h3>
+            @foreach (var item in Model)
+            {
+                <p class="contact-links">
+                    <a href="@item.MailAddress" class="mailtoui">@item.MailAddress</a> <br>
+                    <a href="@item.Phone"></a>
+                </p>
+            }
+            
+        </div>
+       
+        <div class="column lg-4 md-12 contact-block">
+            <a href="mailto:sevvaldemirrt@gmail.com" class="mailtoui btn btn--medium u-fullwidth contact-btn">Say Hello.</a>
+        </div>
+    </div> 
+
+</section>

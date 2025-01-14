@@ -35,6 +35,10 @@ namespace AcunMedyaPortfolioProject.Models
         public virtual DbSet<Projects> Projects { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Testimonials> Testimonials { get; set; }
+        public virtual DbSet<SocialMedia> SocialMedia { get; set; }
+        public virtual DbSet<Expertise> Expertise { get; set; }
+        public virtual DbSet<Introductions> Introductions { get; set; }
+        public virtual DbSet<Footer> Footer { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {
