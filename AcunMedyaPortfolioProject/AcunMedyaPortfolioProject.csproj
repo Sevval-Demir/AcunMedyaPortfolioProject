@@ -455,7 +455,6 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\PartialHead.cshtml" />
     <Content Include="Views\Default\PartialSiteHeader.cshtml" />
-    <Content Include="Views\Default\PartialIntro.cshtml" />
     <Content Include="Views\Default\PartialAbout.cshtml" />
     <Content Include="Views\Default\PartialExperience.cshtml" />
     <Content Include="Views\Default\PartialEducation.cshtml" />
@@ -484,6 +483,7 @@
     <Content Include="Views\Introductıons\CreateIntroduction.cshtml" />
     <Content Include="Views\Introductıons\Index.cshtml" />
     <Content Include="Views\Introductıons\UpdateIntroduction.cshtml" />
+    <Content Include="Views\Default\PartialIntro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
