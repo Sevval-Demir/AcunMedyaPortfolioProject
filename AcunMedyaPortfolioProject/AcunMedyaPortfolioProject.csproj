@@ -136,7 +136,6 @@
     <Compile Include="Controllers\EducationsController.cs" />
     <Compile Include="Controllers\ExperiencesController.cs" />
     <Compile Include="Controllers\ExpertiseController.cs" />
-    <Compile Include="Controllers\FooterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\IntroductıonsController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
@@ -161,9 +160,6 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Expertise.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Footer.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Introductions.cs">
@@ -296,6 +292,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
     <Content Include="luther-1.0.0\luther-1.0.0\site.webmanifest" />
+    <Content Include="CV\CV.pdf" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
@@ -314,7 +311,7 @@
     <Content Include="sidebar-01\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="sidebar-01\css\bootstrap\_media.css" />
     <Content Include="sidebar-01\css\style.css" />
-    <Content Include="sidebar-01\images\logo.jpg" />
+    <Content Include="sidebar-01\images\IMG-20240926-WA0007.jpg" />
     <Content Include="sidebar-01\index.html" />
     <Content Include="sidebar-01\js\bootstrap.min.js" />
     <Content Include="sidebar-01\js\jquery.min.js" />
@@ -461,7 +458,6 @@
     <Content Include="Views\Default\PartialProject.cshtml" />
     <Content Include="Views\Default\PartialTestimonial.cshtml" />
     <Content Include="Views\Default\PartialContact.cshtml" />
-    <Content Include="Views\Default\PartialFooter.cshtml" />
     <Content Include="Views\Default\PartialScripts.cshtml" />
     <Content Include="Views\SocialMedia\Index.cshtml" />
     <Content Include="Views\SocialMedia\CreateSocialMedia.cshtml" />
@@ -469,9 +465,6 @@
     <Content Include="Views\Expertise\Index.cshtml" />
     <Content Include="Views\Expertise\UpdateExpertise.cshtml" />
     <Content Include="Views\Expertise\CreateExpertise.cshtml" />
-    <Content Include="Views\Footer\Index.cshtml" />
-    <Content Include="Views\Footer\CreateFooter.cshtml" />
-    <Content Include="Views\Footer\UpdateFooter.cshtml" />
     <Content Include="Views\Default\PartialExpertise.cshtml" />
     <Content Include="Views\Default\PartialSocialMedia.cshtml" />
     <Content Include="Views\Educations\Index.cshtml" />
@@ -480,10 +473,11 @@
     <Content Include="Views\Experiences\Index.cshtml" />
     <Content Include="Views\Experiences\CreateExperience.cshtml" />
     <Content Include="Views\Experiences\UpdateExperience.cshtml" />
-    <Content Include="Views\Introductıons\CreateIntroduction.cshtml" />
-    <Content Include="Views\Introductıons\Index.cshtml" />
-    <Content Include="Views\Introductıons\UpdateIntroduction.cshtml" />
+    <Content Include="Views\Introductions\CreateIntroduction.cshtml" />
+    <Content Include="Views\Introductions\Index.cshtml" />
+    <Content Include="Views\Introductions\UpdateIntroduction.cshtml" />
     <Content Include="Views\Default\PartialIntro.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

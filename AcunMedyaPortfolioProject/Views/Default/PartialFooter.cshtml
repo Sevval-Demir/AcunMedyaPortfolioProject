@@ -1,12 +1,12 @@
-﻿<footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2025 Tüm Hakları Saklıdır. | Kışisel Blog</p>
+﻿﻿<footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2025 Tüm Hakları Saklıdır. | Portfölyo Sayfası</p>
 
     <div class="categories">
-        <h5>Etiketler</h5>
+        <h5>Kategoriler</h5>
         <div class="category-list">
-            @foreach (var value in ViewBag.Categories as List<AcunMedyaPortfolioProject.Models.Categories>)
+            @foreach (var category in ViewBag.Categories as List<AcunMedyaPortfolioProject.Models.Categories>)
             {
-                <span class="category-item">@value.CategoryName</span>
+                <span class="category-item">@category.CategoryName</span> <!-- Kategoriyi kutucuk olarak göster -->
             }
         </div>
     </div>
@@ -14,27 +14,27 @@
 
 <style>
     .category-list {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px;
-        flex-wrap: wrap;
+        display: flex; /* Flexbox kullanarak yatay sıralama */
+        justify-content: flex-start; /* Sol tarafta hizalama */
+        flex-wrap: wrap; /* Ekran boyutuna göre birden fazla satıra geçebilir */
+        gap: 15px; /* Kategoriler arasında boşluk */
+        margin-left: 20px; /* Sol taraftan 20px boşluk bırakıyoruz */
     }
 
     .category-item {
-        font-size: 14px;
-        color: #555;
-        padding: 6px 15px;
-        background-color: #f0f0f0;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-        border: 1px solid #ccc;
-        border-radius: 20px;
+        font-size: 16px; /* Yazı boyutunu ayarlıyoruz */
+        color: #333; /* Yazı rengi */
+        padding: 8px 20px; /* Kutunun içindeki boşluk */
+        border: 2px solid #ddd; /* Hafif gri renkli kenarlık */
+        border-radius: 25px; /* Yuvarlatılmış köşeler */
+        background-color: #f8f8f8; /* Hafif gri arka plan */
+        cursor: pointer; /* Yazının üzerine gelindiğinde işaretçi simgesi */
+        transition: all 0.3s ease; /* Yumuşak geçiş efekti */
     }
 
         .category-item:hover {
-            background-color: #2ecc71;
-            color: white;
-            border-color: #27ae60;
+            background-color: #3498db; /* Hover durumunda mavi arka plan */
+            color: white; /* Hover durumunda yazı rengi beyaz olur */
+            border-color: #2980b9; /* Hover durumunda kenarlık rengi mavi olur */
         }
 </style>

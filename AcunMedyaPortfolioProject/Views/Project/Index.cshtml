@@ -8,7 +8,7 @@
 
 <div class="container">
     <table class="table table-bordered">
-        <thead>
+        <thead class="thead-dark">
 
             <tr>
                 <th>Id</th>
@@ -29,9 +29,9 @@
                     <td>@project.Id</td>
                     <td>@project.Name</td>
                     <td>@project.Categories.CategoryName</td>
-                    <td><img src="@project.CoverImageUrl" /></td>
+                    <td><img src="@project.CoverImageUrl" class="img-thumbnail" width="100" /></td>
                     <td>@project.Description</td>
-                    <td>@project.ProjectLink</td>
+                    <td><a href="@project.ProjectLink" target="_blank" class="btn btn-info">Projeye Git</a> </td>
                     <td><a href="/Project/UpdateCategory/@project.Id" class="btn btn-success">Güncelle</a></td>
                     <td><a href="/Project/DeleteCategory/@project.Id" class="btn btn-danger">Kaldır</a></td>
                 </tr>
@@ -39,5 +39,5 @@
         </tbody>
     </table>
 
-    <a href="//CreateCategory" class="btn btn-primary">Yeni proje ekle</a>
+    <a href="/Project/CreateCategory" class="btn btn-primary">Yeni proje ekle</a>
 </div>
