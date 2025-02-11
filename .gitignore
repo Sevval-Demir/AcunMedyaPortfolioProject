@@ -1,0 +1,8 @@
+# Visual Studio geçici dosyalar
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+bin/
+obj/
