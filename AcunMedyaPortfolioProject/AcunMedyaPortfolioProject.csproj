@@ -137,7 +137,7 @@
     <Compile Include="Controllers\ExperiencesController.cs" />
     <Compile Include="Controllers\ExpertiseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\IntroductıonsController.cs" />
+    <Compile Include="Controllers\IntroductionsController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
@@ -162,6 +162,7 @@
     <Compile Include="Models\Expertise.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Footer.cs" />
     <Compile Include="Models\Introductions.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -311,7 +312,7 @@
     <Content Include="sidebar-01\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="sidebar-01\css\bootstrap\_media.css" />
     <Content Include="sidebar-01\css\style.css" />
-    <Content Include="sidebar-01\images\IMG-20240926-WA0007.jpg" />
+    <Content Include="sidebar-01\images\image.jpg" />
     <Content Include="sidebar-01\index.html" />
     <Content Include="sidebar-01\js\bootstrap.min.js" />
     <Content Include="sidebar-01\js\jquery.min.js" />
@@ -476,8 +477,8 @@
     <Content Include="Views\Introductions\CreateIntroduction.cshtml" />
     <Content Include="Views\Introductions\Index.cshtml" />
     <Content Include="Views\Introductions\UpdateIntroduction.cshtml" />
-    <Content Include="Views\Default\PartialIntro.cshtml" />
     <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialIntro.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

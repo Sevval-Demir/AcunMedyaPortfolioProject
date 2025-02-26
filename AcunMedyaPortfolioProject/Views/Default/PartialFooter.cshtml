@@ -6,7 +6,7 @@
         <div class="category-list">
             @foreach (var category in ViewBag.Categories as List<AcunMedyaPortfolioProject.Models.Categories>)
             {
-                <span class="category-item">@category.CategoryName</span> <!-- Kategoriyi kutucuk olarak göster -->
+                <span class="category-item">@category.CategoryName</span> 
             }
         </div>
     </div>
@@ -14,27 +14,27 @@
 
 <style>
     .category-list {
-        display: flex; /* Flexbox kullanarak yatay sıralama */
-        justify-content: flex-start; /* Sol tarafta hizalama */
-        flex-wrap: wrap; /* Ekran boyutuna göre birden fazla satıra geçebilir */
-        gap: 15px; /* Kategoriler arasında boşluk */
-        margin-left: 20px; /* Sol taraftan 20px boşluk bırakıyoruz */
+        display: flex; 
+        justify-content: flex-start; 
+        flex-wrap: wrap; 
+        gap: 15px; 
+        margin-left: 20px; 
     }
 
     .category-item {
-        font-size: 16px; /* Yazı boyutunu ayarlıyoruz */
-        color: #333; /* Yazı rengi */
-        padding: 8px 20px; /* Kutunun içindeki boşluk */
-        border: 2px solid #ddd; /* Hafif gri renkli kenarlık */
-        border-radius: 25px; /* Yuvarlatılmış köşeler */
-        background-color: #f8f8f8; /* Hafif gri arka plan */
-        cursor: pointer; /* Yazının üzerine gelindiğinde işaretçi simgesi */
-        transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+        font-size: 16px; 
+        color: #333; 
+        padding: 8px 20px; 
+        border: 2px solid #ddd;
+        border-radius: 25px; 
+        background-color: #f8f8f8; 
+        cursor: pointer; 
+        transition: all 0.3s ease; 
     }
 
         .category-item:hover {
-            background-color: #3498db; /* Hover durumunda mavi arka plan */
-            color: white; /* Hover durumunda yazı rengi beyaz olur */
-            border-color: #2980b9; /* Hover durumunda kenarlık rengi mavi olur */
+            background-color: #3498db; 
+            color: white; 
+            border-color: #2980b9; 
         }
 </style>
