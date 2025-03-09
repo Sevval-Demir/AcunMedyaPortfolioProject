@@ -30,8 +30,20 @@ namespace AcunMedyaPortfolioProject.Controllers
         public PartialViewResult PartialIntro()
         {
             var intro = db.Introductions.FirstOrDefault();
+
+            // Eğer intro null ise, varsayılan bir model oluştur
+            if (intro == null)
+            {
+                intro = new Introductions
+                {
+                    Title = "Başlık Bulunamadı",
+                    Description = "Veritabanında giriş bulunamadı."
+                };
+            }
+
             return PartialView(intro);
         }
+
 
         public PartialViewResult PartialAbout()
         {
@@ -65,7 +77,7 @@ namespace AcunMedyaPortfolioProject.Controllers
 
         public PartialViewResult PartialContact()
         {
-            var contact= db.Contact.FirstOrDefault();
+            var contact= db.Contact.ToList();
             return PartialView(contact);
         }
 
